@@ -27,7 +27,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set up OpenAI API key
-openai.api_key = OPENAI_API_KEY
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 @app.route('/')
 def index():
@@ -45,8 +45,8 @@ def analyze_text():
     """
     # Use OpenAI API to analyze the text
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4",  # Changed from "gpt-4o" to "gpt-4"
+        response = client.chat.completions.create((
+            model="gpt-4o",  # Changed from "gpt-4o" to "gpt-4"
             messages=[
                 {"role": "user", "content": prompt}
             ],
