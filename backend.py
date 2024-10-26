@@ -47,9 +47,9 @@ def analyze_text():
     summary_prompt = f"""
         Provide a 3-bullet point short summary at most 30 wordsof the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
         Sample: 
-        - bullet point 1
-        - bullet point 2
-        - bullet point 3
+        - bullet point 1 \n
+        - bullet point 2 \n
+        - bullet point 3 \n
         Text: {sample_text}
     """
     
