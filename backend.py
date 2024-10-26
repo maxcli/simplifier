@@ -34,12 +34,12 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 @app.route('/analyze_text', methods=['POST'])
 def analyze_text():
     data = request.json
-    sample_text = data.get('text', '')
+    sample_text = data.get('sample_text', '')
     expertise = data.get('expertise', '')
     education_level = data.get('education_level', '')
 
     prompt = f"""
-        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}):\n\n{sample_text}\n\nText:
+        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level})\n\nText:{sample_text}:
     """
     
     try:
