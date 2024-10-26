@@ -39,19 +39,19 @@ def analyze_text():
     sample_text = data.get('sample_text', '')
     expertise = data.get('expertise', '')
     education_level = data.get('education_level', '')
+    language = data.get('language', 'Spanish')
+
+    # Debug print to ensure language is being received correctly
+    print("Language:", language)  # This will display in your terminal/console
 
     rewrite_prompt = f"""
-        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+        Rewrite the following text in {language}. Adjust the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
         Text: {sample_text}
     """
 
     summary_prompt = f"""
-        Provide a 3-bullet point short summary at most 30 wordsof the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
-        Sample: 
-        - bullet point 1 \n
-        - bullet point 2 \n
-        - bullet point 3 \n
+        Summarize the following text in {language} with three bullet points (each at most 30 words). Each point should be a complete sentence without any leading symbols:
         Text: {sample_text}
     """
     

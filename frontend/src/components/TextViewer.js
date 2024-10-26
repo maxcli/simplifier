@@ -28,6 +28,7 @@ function TextViewer({language, educationLevel, expertise}) {
       const payload = {
         education_level: educationLevel,
         expertise: expertise,
+        language: language,
         [inputType === "text" ? "sample_text" : "url"]: inputType === "text" ? inputText : inputUrl,
       };
 
