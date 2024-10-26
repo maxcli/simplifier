@@ -38,6 +38,62 @@ def analyze_text():
     expertise = data.get('expertise', '')
     education_level = data.get('education_level', '')
 
+    rewrite_prompt = f"""
+        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+
+        Text: {sample_text}
+    """
+
+    summary_prompt = f"""
+        Provide a 3-bullet point summary of the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+
+        Text: {sample_text}
+    """
+    
+    try:
+        # First API call for rewritten text
+        rewrite_response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": rewrite_prompt}],
+            max_tokens=8192,
+            n=1,
+            temperature=0.5,
+        )
+        rewritten_text = rewrite_response.choices[0].message.content.strip()
+
+        # Second API call for bullet point summary
+        summary_response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": summary_prompt}],
+            max_tokens=8192,
+            n=1,
+            temperature=0.5,
+        )
+        summary = summary_response.choices[0].message.content.strip()
+
+        return jsonify({
+            'text': rewritten_text,
+            'summary': summary
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route("/analyze_website", methods=['POST'])
+def analyze_website():
+    data = request.json
+    url = data.get('url', '')
+    
+    try:
+        text = scrape_website(url)
+        return analyze_text(text)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+        
+        
+    expertise = data.get('expertise', '')
+    education_level = data.get('education_level', '')
+
     prompt = f"""
         Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level})\n\nText:{sample_text}:
     """
@@ -58,6 +114,10 @@ def analyze_text():
         return jsonify({'text': summary})  # Changed 'summary' to 'text' to match frontend expectation
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+        
+    
+        
+
 
 if __name__ == '__main__':
     app.run(debug=True) # default http://localhost:5000
