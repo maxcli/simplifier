@@ -85,10 +85,35 @@ def analyze_text():
 
     
 def scrape_website(url):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    return soup.get_text()
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Remove script and style elements
+        for script in soup(["script", "style"]):
+            script.decompose()
+        
+        # Get text
+        text = soup.get_text()
+        
+        # Break into lines and remove leading and trailing space on each
+        lines = (line.strip() for line in text.splitlines())
+        
+        # Break multi-headlines into a line each
+        chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+        
+        # Drop blank lines
+        text = '\n'.join(chunk for chunk in chunks if chunk)
+        
+        return text
+    except requests.RequestException as e:
+        print(f"Error scraping website: {e}")
+        return ""
 
+
+def truncate_text(text, max_chars=3000):
+    return text[:max_chars]
 
 @app.route('/analyze_url', methods=['POST'])
 def analyze_url():
@@ -98,19 +123,21 @@ def analyze_url():
     education_level = data.get('education_level', '')
 
     extracted_text = scrape_website(url)
+    
+    truncated_text = truncate_text(extracted_text)
     if not extracted_text:
         return jsonify({'error': 'Failed to extract text from the provided URL'}), 400
 
     rewrite_prompt = f"""
         Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
-        Text: {extracted_text}
+        Text: {truncated_text}
     """
 
     summary_prompt = f"""
         Provide a 3-bullet point summary of the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
-        Text: {extracted_text}
+        Text: {truncated_text}
     """
     
     try:
@@ -118,7 +145,7 @@ def analyze_url():
         rewrite_response = client.chat.completions.create(
             model="gpt-4",
             messages=[{"role": "user", "content": rewrite_prompt}],
-            max_tokens=8192,
+            max_tokens=4096,
             n=1,
             temperature=0.5,
         )
@@ -128,7 +155,7 @@ def analyze_url():
         summary_response = client.chat.completions.create(
             model="gpt-4",
             messages=[{"role": "user", "content": summary_prompt}],
-            max_tokens=8192,
+            max_tokens=4096,
             n=1,
             temperature=0.5,
         )
