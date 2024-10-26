@@ -26,7 +26,6 @@ except Exception as error:
 app = Flask(__name__)
 CORS(app)
 
-# Set up OpenAI API key
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 @app.route('/')

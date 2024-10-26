@@ -1,7 +1,7 @@
 // src/App.js
-import React from "react";
+import React, { useState } from "react";
 import {ThemeProvider, createTheme} from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import { Box, Container, Grid } from "@mui/material";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import TextViewer from "./components/TextViewer";
@@ -9,14 +9,36 @@ import TextViewer from "./components/TextViewer";
 const theme = createTheme();
 
 function App() {
+  const [tone, setTone] = useState('neutral');
+  const [educationLevel, setEducationLevel] = useState('high_school');
+  const [expertise, setExpertise] = useState('intermediate');
+
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      <Typography variant="h1" component="h2">
-        Hello, Simplifier!
-      </Typography>
-      <Sidebar />
-      <TextViewer />
+      <Box sx={{ flexGrow: 1 }}>
+        <Header />
+        <Container maxWidth="lg">
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={3}>
+              <Sidebar 
+                tone={tone}
+                setTone={setTone}
+                educationLevel={educationLevel}
+                setEducationLevel={setEducationLevel}
+                expertise={expertise}
+                setExpertise={setExpertise}
+              />
+            </Grid>
+            <Grid item xs={12} md={9}>
+              <TextViewer 
+                tone={tone}
+                educationLevel={educationLevel}
+                expertise={expertise}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </ThemeProvider>
   );
 }
