@@ -1,0 +1,311 @@
+Neural Science: Review
+A Century of Progress and
+the Mysteries that Remain
+aspects of cognitive function. Some lesions interfere
+with comprehension of language, other with the expression of language; still other lesions interfere with the
+perception of visual motion or of shape, with the storage
+of long-term memories, or with voluntary action. In the
+Thomas D. Albright,* Thomas M. Jessell,†
+Eric R. Kandel,† and Michael I. Posner‡
+*Howard Hughes Medical Institute
+The Salk Institute for Biological Studies
+San Diego, California 92186
+†Howard Hughes Medical Institute largest sense, these studies revealed that all mental
+and Center for Neurobiology and Behavior processes, no matter how complex, derive from the
+Department of Biochemistry and Molecular Biophysics brain and that the key to understanding any given mental
+College of Physicians and Surgeons process resides in understanding how coordinated sigof Columbia University naling in interconnected brain regions gives rise to beNew York, New York 10032 havior. Thus, one consequence of this top–down analy-
+‡Sackler Institute sis has been initial demystification of aspects of mental
+Department of Psychiatry function: of language perception, action, learning, and
+Weill Medical College of Cornell University memory (Kandel et al., 2000).
+New York, New York 10021 A second consequence of the top–down approach
+came at the beginning of the twentieth century with the
+work of the Gestalt psychologists, the forerunners of
+Part I. Introduction cognitive psychologists. They made us realize that percepts, such as those which arise from viewing a visual
+The goal of neural science is to understand the biological scene, cannot simply be dissected into a set of indepenmechanisms that account for mental activity. Neural sci- dent sensory elements such as size, color, brightness,
+movement, and shape. Rather, the Gestaltists found that ence seeks to understand how the neural circuits that
+the whole of perception is more than the sum of its parts are assembled during development permit individuals examined in isolation. How one perceives an aspect of to perceive the world around them, how they recall that an image, its shape or color, for example, is in part perception from memory, and, once recalled, how they determined by the context in which that image is per- can act on the memory of that perception. Neural sci- ceived. Thus, the Gestaltists made us appreciate that ence also seeks to understand the biological underpin- to understand perception we needed not only to under- nings of our emotional life, how emotions color our think- stand the physical properties of the elements that are ing and how the regulation of emotion, thought, and perceived, but more importantly, to understand how the action goes awry in diseases such as depression, mania, brain reconstructs the external world in order to create schizophrenia, and Alzheimer’s disease. These are enor- a coherent and consistent internal representation of that mously complex problems, more complex than any we world. have confronted previously in other areas of biology. With the advent of brain imaging, the holistic methods Historically, neural scientists have taken one of two available to the nineteenth century clinical neurologist, approaches to these complex problems: reductionist or based mostly on the detailed study of neurological pa- holistic. Reductionist, or bottom–up, approaches at- tients with defined brain lesions, were enhanced dramat- tempt to analyze the nervous system in terms of its ically by the ability to examine cognitive functions in intact elementary components, by examining one molecule, behaving normal human subjects (Posner and Raichle, one cell, or one circuit at a time. These approaches have 1994). By combining modern cognitive psychology with converged on the signaling properties of nerve cells and high-resolution brain imaging, we are now entering an era used the nerve cell as a vantage point for examining when it may be possible to address directly the higher- how neurons communicate with one another, and for order functions of the brain in normal subjects and to determining how their patterns of interconnections are study in detail the nature of internal representations. assembled during development and how they are modi- The success of the reductionist approach became fied by experience. Holistic, or top–down approaches, fully evident only in the twentieth century with the analy- focus on mental functions in alert behaving human be- sis of the signaling systems of the brain. Through this ings and in intact experimentally accessible animals and approach, we have learned the molecular mechanisms attempt to relate these behaviors to the higher-order through which individual nerve cells generate their char- features of large systems of neurons. Both approaches acteristic long-range signals as all-or-none action po- have limitations but both have had important successes. tentials and how nerve cells communicate through spe- The holistic approach had its first success in the mid- cific connections by means of synaptic transmission.
+dle of the nineteenth century with the analysis of the From these cellular studies, we have learned of the rebehavioral consequences following selective lesions of markable conservation of both the long-range and the
+the brain. Using this approach, clinical neurologists, led synaptic signaling properties of neurons in various parts
+by the pioneering efforts of Paul Pierre Broca, discov- of the vertebrate brain, indeed in the nervous systems
+ered that different regions of the cerebral cortex of the of all animals. What distinguishes one brain region from
+human brain are not functionally equivalent (Schiller, another and the brain of one species from the next, is
+1992; Ryalls and Lecours, 1996). Lesions to different not so much the signaling molecules of their constituent
+brain regions produce defects in distinctively different nerve cells, but the number of nerve cells and the way
+Cell/Neuron Millennial Review Supplement
+S2
+they are interconnected. We have also learned from As a result, these anatomists believed that the elements
+studies of single cells how sensory stimuli are sorted of the nervous system did not conform to the cell theory
+out and transformed at various relays and how these of Schleiden and Schwann, the theory that the cell was
+relays contribute to perception. Much as predicted by the functional unit of all eukaryotic tissues.
+the Gestalt psychologists, these cellular studies have The confusion that prevailed amongst nineteenth censhown us that the brain does not simply replicate the tury anatomists took two forms. First, most were unclear
+reality of the outside world, but begins at the very first as to whether the axon and the many dendrites of a
+stages of sensory transduction to abstract and restruc- neuron were in fact extensions that originated from a
+ture external reality. single cell. For a long time they failed to appreciate that
+In this review we outline the accomplishments and the cell body of the neuron, which housed the nucleus,
+limitations of these two approaches in attempts to delin- almost invariably gave rise to two types of extensions:
+eate the problems that still confront neural science. We to dendrites that serve as input elements for neurons
+first consider the major scientific insights that have and that receive information from other cells, and to an
+helped delineate signaling in nerve cells and that have axon which serves as the output element of the neuron
+placed that signaling in the broader context of modern and conveys information to other cells, often over long cell and molecular biology. We then go on to consider distances. Appreciation of the full extent of the neuron how nerve cells acquire their identity, how they send and its processes came ultimately with the histological axons to specific targets, and how they form precise studies of Ramo´ n y Cajal and from the studies of Ross patterns of connectivity. We also examine the extension Harrison, who observed directly the outgrowth of axons of reductionist approaches to the visual system in an and dendrites from neurons grown in isolation in tissue attempt to understand how the neural circuitry of visual culture.
+processing can account for elementary aspects of visual A second confusion arose because anatomists could
+perception. Finally, we turn from reductionist to holistic not visualize and resolve the cell membrane and thereapproaches to mental function. In the process, we con- fore they were uncertain whether neurons were de- front some of the enormous problems in the biology of limited by membranes throughout their extent. As a re- mental functioning that remain elusive, problems in the sult many believed that the cytoplasm of two apposite biology of mental functioning that have remained com- cells was continuous at their points of contact and pletely mysterious. How does signaling activity in differ- formed a syncytium or reticular net. Indeed, the neurofi- ent regions of the visual system permit us to perceive brils of one cell were thought to extend into the cyto- discrete objects in the visual world? How do we recog- plasm of the neighboring cell, serving as a path for nize a face? How do we become aware of that percep- current flow from one cell to another. This confusion tion? How do we reconstruct that face at will, in our was solved intuitively and indirectly by Ramo´ n y Cajal imagination, at a later time and in the absence of ongoing in the 1890s and definitively in the 1950s with the appli- visual input? What are the biological underpinnings of cation of electron microscopy to the brain by Sanford our acts of will?
+Palay and George Palade. As the discussions below attempt to make clear, the Ramo´ n y Cajal was able to address these two ques- issue is no longer whether further progress can be made tions using two methodological strategies. First, he in understanding cognition in the twenty-first century.
+We clearly will be able to do so. Rather, the issue is turned to studying the brain in newborn animals, where
+whether we can succeed in developing new strategies the density of neurons is low and the expansion of the
+dendritic tree is still modest. In addition, he used a spe- for combining reductionist and holistic approaches in cialized silver staining method developed by Camillo order to provide a meaningful bridge between molecular
+mechanism and mental processes: a true molecular biol- Golgi that labels only an occasional neuron, but labels
+ogy of cognition. If this approach is successful in the these neurons in their entirety, thus permitting the visualtwenty-first century, we may have a new, unified, and ization of their cell body, their entire dendritic tree, and
+their axon. With these methodological improvements, intellectually satisfying view of mental processes.
+Ramo´ n y Cajal observed that neurons, in fact, are discrete cells, bounded by membranes, and inferred that Part II. The Signaling Capabilities of Neurons nerve cells communicate with one another only at specialized points of appositions, contacts that Charles The Neuron Doctrine
+Modern neural science, as we now know it, began at Sherrington was later to call synapses (Sherrington,
+1897). the turn of the century when Santiago Ramo´ n y Cajal
+provided the critical evidence for the neuron doctrine, As Ramo´ n y Cajal continued to examine neurons in
+the idea that neurons serve as the functional signaling different parts of the brain, he showed an uncanny ability
+units of the nervous system and that neurons connect to infer from static images remarkable functional into one another in precise ways (Ramo sights into the dynamic properties of neurons. One of ´ n y Cajal, 1894,
+1906, 1911). Ramo´ n y Cajal’s neuron doctrine repre- his most profound insights, gained in this way, was the
+sented a major shift in emphasis to a cellular view of principle of dynamic polarization. According to this printhe brain. Most nineteenth century anatomists—Joseph ciple, electrical signaling within neurons is unidirecvon Gerlach, Otto Deiters, and Camillo Golgi, among tional: the signals propagate from the receiving pole of
+them—were perplexed by the complex shape of neurons the neuron—the dendrites and the cell body—to the
+and by the seemingly endless extensions and interdig- axon, and then, along the axon to the output pole of the
+itations of their axons and dendrites (Shepherd, 1991). neuron—the presynaptic axon terminal.
+Neural Science: Past Progress and Remaining Mysteries
+S3
+of the nervous system was integration; the nervous system was uniquely capable of weighing the cons
+tem was uniquely capable of weighing the consequences of different types of information and then deciding on an appropriate course of action based upon
+that evaluation. Sherrington illustrated the integrative
+capability of the nervous system in three ways. First,
+he pointed out that reflex actions serve as prototypic
+examples of behavioral integration; they represent coordinated, purposeful behavior in response to a specific
+input. For example in the flexion withdrawal and crossextension reflex, a stimulated limb will flex and withdraw
+rapidly in response to a painful stimulus while, as part
+of a postural adjustment, the opposite limb will extend
+(Sherrington, 1910). Second, since each spinal reflex—no matter how complex—used the motor neuron
+in the spinal cord for its output, Sherrington developed
+the idea that the motor neuron was the final common
+pathway for the integrative actions of the nervous system (Sherrington, 1906). Finally, Sherrington discovered—what Ramo´ n y Cajal could not infer—that not all
+synaptic actions were excitatory; some could be inhibitory (Sherrington, 1932). Since motor neurons receive a
+convergence of both excitatory and inhibitory synaptic
+input, Sherrington argued that motor neurons represent
+an example—the prototypical example—of a cellular
+substrate for the integrative action of the brain. Each
+motor neuron must weigh the relative influence of two
+types of inputs, inhibitory and excitatory, before deciding whether or not to activate a final common pathway
+leading to behavior. Each neuron therefore recapitulates,
+in elementary form, the integrative action of the brain.
+In the 1950s and 1960s, Sherrington’s last and most Figure 1. Ramo´ n y Cajal’s Illustration of Neural Circuitry of the Hippocampus influential student, John C. Eccles, used intracellular
+A drawing by Ramo´ n y Cajal based on sections of the rodent hippo- recordings from neurons to reveal the ionic mechanisms
+campus, processed with a Golgi and Weigert stain. The drawing through which motor neurons generate the inhibitory
+depicts the flow of information from the entorhinal cortex to the and excitatory actions that permit them to serve as the
+dentate granule cells (by means of the perforant pathway) and from final common pathway for neural integration (Eccles, the granule cells to the CA3 region (by means of the mossy fiber 1953). In addition, Eccles, Karl Frank, and Michael Fuor- pathway), and from there to the CA1 region of the hippocampus (by tes found that motor neurons had a specialized region, means of the Schaeffer collateral pathway). (Based on Ramo´ n y the initial segment of the axon, which served as a crucial Cajal, 1955.)
+integrative or decision-making component of the neuron
+(Fuortes et al., 1957; Eccles, 1964). This component
+summed the total excitatory and inhibitory input and The principle of dynamic polarization proved enor- discharged an action potential if, and only if, excitation mously influential because it provided the first function- of the motor neuron exceeded inhibition by a certain ally coherent view of the various compartments of neu- critical minimum.
+rons. In addition, by identifying the directionality of The findings of Sherrington and Eccles implied that information flow in the nervous system, dynamic polar- each neuron solves the competition between excitation ization provided a logic and set of rules for mapping the and inhibition by using, at its initial segment, a winner
+individual components of pathways in the brain that takes all strategy. As a result, an elementary aspect of constitute a coherent neural circuit (Figure 1). Thus, in the integrative action of the brain could now be studied contrast to the chaotic view of the brain that emerged at the level of individual cells by determining how the from the work of Golgi, Gerlach, and Deiters who con- summation of excitation and inhibition leads to an inteceived of the brain as a diffuse nerve net in which every grated, all-or-none, output at the initial segment. Indeed,
+imaginable type of interaction appeared possible, Ra- it soon became evident that studies of the motor neuron
+mo´ n y Cajal focused his experimental analysis on the had predictive value for all neurons in the brain. Thus,
+brain’s most important function: the processing of infor- the initial task in understanding the integrative action
+mation. of the brain could be reduced to understanding signal
+Sherrington incorporated Ramo´ n y Cajal’s notions of integration at the level of individual nerve cells.
+the neuron doctrine, of dynamic polarization, and of The ability to extend the analysis of neuronal signaling
+the synapse into his book The Integrative Action of the to other regions of the brain was, in fact, already being
+Nervous System (1906). This monograph extended advanced by two of Sherrington’s contemporaries, Edthinking about the function of nerve cells to the level of gar Adrian and John Langley. Adrian developed methbehavior. Sherrington pointed out that the key function ods of single unit analysis within the central nervous
+Cell/Neuron Millennial Review Supplement
+S4
+system, making it possible to study signaling in any part
+of the nervous system at the level of single cells (Adrian,
+1957). In the course of this work, Adrian found that virtually all neurons use a conserved mechanism for signaling
+within the cell: the action potential. In all cases, the
+action potential proved to be a large, all-or-none, regenerative electrical event that propagated without fail from
+the initial segment of the axon to the presynaptic terminal. Thus, Adrian showed that what made one cell a
+sensory cell carrying information of vision and another
+cell a motor cell carrying information about movement
+was not the nature of the action potential that each cell
+generated. What determined function was the neural
+circuit to which that cell belonged.
+Sherrington’s other contemporary, John Langley (1906),
+provided some of the initial evidence (later extended by
+Otto Loewi, Henry Dale, and Wilhelm Feldberg) that, at
+most synapses, signaling between neurons—synaptic
+transmission—was chemical in nature. Thus, the work
+of Ramo´ n y Cajal, Sherrington, Adrian, and Langley set
+the stage for the delineation, in the second half of the
+twentieth century, of the mechanisms of neuronal signaling—first in biophysical (ionic), and then in molecular
+terms.
+Long-Range Signaling within Neurons:
+The Action Potential
+In 1937 Alan Hodgkin found that an action potential
+generates a local flow of current that is sufficient to
+depolarize the adjacent region of the axonal membrane,
+in turn triggering an action potential (Hodgkin, 1937).
+Through this spatially interactive process along the surface of the membrane, the action potential is propagated
+without failure along the axon to the nerve terminal (Figure 2A). In 1939 Kenneth Cole and Howard Curtis further
+found that when an all-or-none action potential is generated, the membrane of the axon undergoes a change in
+ionic conductance, suggesting that the action potential
+reflects the flow of ionic current (Figure 2B). Figure 2. The Action Potential
+Hodgkin, Andrew Huxley, and Bernhard Katz ex- (A) This historic recording of a membrane resting potential and an tended these observations by examining which specific action potential was obtained by Alan Hodgkin and Andrew Huxley
+currents flow during the action potential. In a landmark with a capillary pipette placed across the membrane of the squid
+series of papers in the early 1950s, they provided a giant axon in a bathing solution of sea water. Time markers (500
+quantitative account of the ionic currents in the squid Hz) on the horizontal axis are separated by 2 ms. The vertical scale
+indicates the potential of the internal electrode in millivolts; the sea giant axon (Hodgkin et al., 1952). This view, later called water outside is taken as zero potential. (From Hodgkin and Huxley, the ionic hypothesis, explained the resting membrane 1939.) potential in terms of voltage-insensitive (nongated or (B) A net increase in ionic conductance in the membrane of the
+leakage) channels permeable primarily to K1 and the axon accompanies the action potential. This historic recording from
+generation and propagation of the action potential in an experiment conducted in 1938 by Kenneth Cole and Howard
+Curtis shows the oscilloscope record of an action potential superim- terms of two discrete, voltage-gated conductance path- posed on a simultaneous record of the ionic conductance. (Modified ways, one selective for Na1 and the other selective for from Kandel et al., 2000). K1 (Figure 2C). (C) The sequential opening of voltage-gated Na1 and K1 channels
+The ionic hypothesis of Hodgkin, Huxley, and Katz generates the action potential. One of Hodgkin and Huxley’s great
+remains one of the deepest insights in neural science. achievements was to separate the total conductance change during
+an action potential, first detected by Cole and Curtis (Figure 2B), It accomplished for the cell biology of neurons what the
+into separate components that could be attributed to the opening structure of DNA did for the rest of biology. It unified of Na1 and K1 channels. The shape of the action potential and the cellular study of the nervous system in general, and the underlying conductance changes can be calculated from the in fact, the study of ion channels in general. One of the properties of the voltage-gated Na1 and K1 channels. (From Kandel
+strengths of the ionic hypothesis was its generality and et al., 2000.)
+predictive power. It provided a common framework for
+all electrically excitable membranes and thereby provided the first link between neurobiology and other fields small ions is a general feature shared by all cells. Moreof cell biology. Whereas action potential signaling is a over, the ionic hypothesis of the 1950s was so precise
+relatively specific mechanism distinctive to nerve and in its predictions that it paved the way for the molecular
+muscle cells, the permeability of the cell membrane to biological explosion that was to come i
+sis of Hodgkin, Huxley, and Katz left something unspeci- large variety of nonneuronal cells. With these advances
+fied. In particular, it left unspecified the molecular nature came the realization that virtually all cells harbor in their
+of the pore through the lipid membrane bilayer and the surface membrane (and even in their internal memmechanisms of ionic selectivity and gating. These as- branes) Ca21 and K1 channels similar to those found in
+pects were first addressed by Bertil Hille and Clay Arm- nerve cells. Second, the introduction of patch clamping
+strong. In the late 1960s, Hille devised procedures for also set the stage for the analysis of channels at the
+measuring Na1 and K1 currents in isolation (for review molecular level, and not only voltage-gated channels of
+see Hille et al., 1999). Using pharmacological agents the sort we have so far considered but also of ligandthat selectively block one but not the other ionic conduc- gated channels, to which we now turn.
+tance pathway, Hille was able to infer that the Na1 and Short-Range Signaling between Neurons:
+K1 conductance pathways of Hodgkin and Huxley corre- Synaptic Transmission
+sponded to independent ion channel proteins. In the The first interesting evidence for the generality of the
+1970s Hille used different organic and inorganic ions of ionic hypothesis of Hodgkin, Huxley, and Katz was the
+specified size to provide the first estimates of the size realization in 1951 by Katz and Paul Fatt that, in its
+and shape of the pore of the Na1 and the K1 channels. simplest form, chemical synaptic transmission repreThese experiments led to the defining structural charac- sents an extension of the ionic hypothesis (Fatt and
+teristic of each channel—the selectivity filter—the nar- Katz 1951, 1952). Fatt and Katz found that the synaptic
+rowest region of the pore, and outlined a set of physical– receptor for chemical transmitters was an ion channel.
+chemical mechanisms that could explain how Na1 But, rather than being gated by voltage as were the
+channels are able to exclude K1 and conversely, how Na1 and K1 channels, the synaptic receptor was gated
+K1 channels exclude Na1. chemically, by a ligand, as Langley, Dale, Feldberg, and
+In parallel, Armstrong addressed the issue of gating Loewi had earlier argued. Fatt and Katz and Takeuchi
+in response to a change in membrane voltage. How and Takeuchi showed that the binding of acetylcholine, does an Na1 channel open rapidly in response to voltage the transmitter released by the motor nerve terminal, to change? How, once opened, is it closed? Following ini- its receptors leads to the opening of a new type of ion tial experiments of Knox Chandler on excitation contrac- channel, one that is permeable to both Na1 and K1
+tion coupling in muscle, Armstrong measured minute (Figure 3) (Takeuchi and Takeuchi, 1960). At inhibitory “gating” currents that accompanied the movement, synapses, transmitters, typically g-aminobutyric acid within the transmembrane field, of the voltage sensor (GABA) or glycine, open channels permeable to Cl2 or
+postulated to exist by Hodgkin and Huxley. This achieve- K1 (Boistel and Fatt, 1958; Eccles, 1964). ment led to structural predictions about the number of In the period 1930 to 1950, there was intense con- elementary charges associated with the voltage sensor. troversy within the neural science community about In addition, Armstrong discovered that mild intracellular whether transmission between neurons in the central
+proteolysis selectively suppresses Na1 channel inacti- nervous system occurred by electrical or chemical vation without affecting voltage-dependent activation, means. In the early 1950s Eccles, one of the key propo- thereby establishing that activation and inactivation in- nents of electrical transmission, used intracellular re- volve separate (albeit, as later shown, kinetically linked) cordings from motor neurons and discovered that syn- molecular processes. Inactivation reflects the blocking aptic excitation and inhibition in the spinal cord was action of a globular protein domain, a “ball,” tethered mediated by chemical synaptic transmission. He further by a flexible peptide chain to the intracellular side of found that the principles of chemical transmission de- the channel. Its entry into the mouth of the channel rived by Fatt and Katz from studies of peripheral syn- depends on the prior activation (opening) of the channel. apses could be readily extended to synapses in the This disarmingly simple “mechanical” model was dra- nervous system (Brock et al., 1952; Eccles, 1953, 1964). matically confirmed by Richard Aldrich in the early Thus, during the 1960s and 1970s the nature of the 1990s. Aldrich showed that a cytoplasmic amino termi- postsynaptic response at a number of readily accessible nal peptide “ball” tethered by a flexible chain does in- chemical synapses was analyzed, including those medi- deed form part of the K1 channel and underlies its inacti- ated by acetylcholine, glutamate, GABA, and glycine vation, much as Armstrong predicted. (see for example Watkins and Evans, 1981). In each Until the 1970s, measurement of current flow was case, the transmitter was found to bind to a receptor carried out with the voltage-clamp technique developed protein that directly regulated the opening of an ion by Cole, Hodgkin, and Huxley, a technique that detected channel. Even prior to the advent in the 1980s of molecu- the flow of current that followed the opening of thou- lar cloning, which we shall consider below, it had be- sands of channels. The development of patch-clamp
+methods by Erwin Neher and Bert Sakmann revolution- come clear, from the biochemical studies of Jean-Pierre
+Changeux and of Arthur Karlin that in ligand-gated chan- ized neurobiology by permitting the characterization of nels the transmitter binding site and the ionic channel the elemental currents that flow when a single ion channel—a single membrane protein—undergoes a transi- constitute different domains within a single multimeric
+tion from a closed to an open conformation (Neher and protein (for reviews see Changeux et al., 1992; Karlin
+Sakmann, 1976) (Figure 4A). This technical advance had and Akabas, 1995; Cowan and Kandel, 2000).
+two additional major consequences. First, patch clamp- As with voltage-gated channels, the single channel
+ing could be applied to cells as small as 2–5 mm in measurements of Neher and Sakmann brought new indiameter whereas voltage clamping could only be car- sights into ligand-gated channels (Neher and Sakmann,
+ried out routinely on cells 50 mm or larger. Now, it be- 1976). For example, in the presence of ligand, the acetylcame possible to study biophysical properties of the choline (ACh) channel at the vertebrate neuromuscular
+Cell/Neuron Millennial Review Supplement
+S6
+have no direct continuity and are separated by a discrete
+extracellular space, the synaptic cleft (Bennett, 2000).
+The Proteins Involved in Generating Action
+Potentials and Synaptic Potentials Share
+Features in Common
+In the 1980s, Shosaku Numa, Lily Yeh Jan, Yuh Nung
+Jan, William Catterall, Steven Heineman, Peter Seeburg,
+Heinrich Betz, and others cloned and expressed functional voltage-gated Na1, Ca21, and K1 channels, as well
+as the ligand-gated receptor channels for ACh, GABA,
+glycine, and glutamate (Numa, 1989; Armstrong and
+Hille, 1998; Green et al., 1998). Prior biophysical studies
+already had taught us much about channels, and as a
+consequence molecular cloning was in a position rapidly
+to provide powerful new insights into the membrane
+topology and subunit composition of both voltage-gated
+and ligand-gated signaling channel proteins (Armstrong
+and Hille, 1998; Colquhoun and Sakmann, 1998). Molecular cloning revealed that all ligand-gated channels have
+a common overall design and that this design shares
+features with voltage-gated channels.
+Based on sequence identity, ligand-gated channels
+Figure 3. The Conductance of Single Ion Channels and a Prelimi- can be divided into two superfamilies: (1) receptors for nary View of Channel Structure glutamate (of the NMDA [N-methyl-D-aspartic acid] and (A) Recording current flow in single ion channels. Patch-clamp rec- non-NMDA classes) and (2) receptors for other small ord of the current flowing through a single ion channel as the molecule transmitters: nicotinic ACh, 5-hydroxytrypta- channel switches between its closed and open states. (Courtesy of mine, GABA, glycine, and ATP (Green et al., 1998) (Figure B. Sakmann.)
+(B) Reconstructed electron microscope view of the ACh receptor- 6). Of these, the most detailed information is again availchannel complex in the fish Torpedo californica. The image was able on the nicotinic ACh receptors of skeletal muscle
+obtained by computer processing of negatively stained images of (Figure 3B). This receptor is made up of four distinct
+ACh receptors. The resolution is 1.7 nm, fine enough to visualize subunits, a, b, g, and d, with the a subunit represented overall structure but too coarse to resolve individual atoms. The twice in a five-subunit channel (a2bgd). Three-dimen- overall diameter of the receptor and its channel is about 8.5 nm. sional images reveal a channel made up of the five sub- The pore is wide at the external and internal surfaces of the membrane but narrows considerably within the lipid bilayer. The channel units surrounding the water-filled channel pore (Figures
+extends some distance into the extracellular space. (Adapted from 3B and 4). Much as predicted by Hille, the channel apstudies by Toyoshima and Unwin.) (From Kandel et al., 2000.) pears to be divided into three regions: a relatively large
+entrance region on the external surface; a narrow transmembrane pore, only a few atomic diameters wide,
+which selects for ions on the basis of their size and junction opens briefly (on average for 1 to 10 ms) and charge; and a large exit region on the internal plasma gives rise to a square pulse of inward current, roughly membrane surface. equivalent to 20,000 Na1 ions per channel per ms. The The first of the voltage-sensitive channels to be extraordinary rate of ion translocation revealed by these cloned, the brain Na1 channel, was found to consist of single channel measurements confirmed directly the one large (a) and two smaller (b) subunits. The a subunit idea of the ionic hypothesis—that ions involved in signal- is widely distributed and is the major pore-forming sub- ing cross the membrane by passive electrochemical unit essential for transmembrane Na1 flux, whereas the movement through aqueous transmembrane channels smaller subunits are regulatory and are expressed only rather than through transport by membrane carriers (Fig- by subsets of cells (where they participate in channel ure 3A). assembly and inactivation). The a subunit consists of Following the demonstration of the chemical nature of a single peptide of about 2000 amino acids with four transmission at central as well as peripheral synapses, internally repeated domains of similar structures. Each neurobiologists began to suspect that communication domain contains six putative membrane-spanning seg- at all synapses was mediated by chemical signals. In ments, S1 to S6, which are thought to be a helical, and 1957, however, Edwin Furshpan and David Potter made a reentrant P loop. The P loop connects the S5 and S6 the discovery that transmission at the giant fiber syn- segments and forms the outer mouth and selectivity apse in crayfish was electrical (Furshpan and Potter, filter of the channel.
+1957). Subsequently, Michael Bennett (1972) and others The voltage-gated Ca21 channels are similar to the
+showed that electrical transmission was widespread Na1 channel in their overall design. However, each of
+and operated at a variety of vertebrate and invertebrate the cloned K1 channels encodes only a single domain,
+synapses. Thus, neurobiologists now accept the exis- of about 600 amino acids, containing the six putative
+tence of two major modes of synaptic transmission: transmembrane regions and the P loop. As might be
+electrical, which depends on current through gap junc- predicted from this structure, four of these subunits are
+tions that bridge the cytoplasm of pre- and postsynaptic required to form a functional channel (either as homocells; and chemical, in which pre- and postsynaptic cells or as heterotetramers)
+age- and Ligand-Gated Ion Channels
+(A) The basic topology of the a subunit of the
+voltage-gated Na1 channel, and the corresponding segments of the voltage-gated
+Ca21 and K1 channels. The a subunit of the
+Na1 and Ca21 channels consists of a single
+polypeptide chain with four repetitions of six
+membrane-spanning a-helical regions. The
+S4 region, the fourth membrane-spanning
+a-helical region, is thought to be the voltage
+sensor. A stretch of amino acids, the P region
+between the 5th and 6th a helices, dips into
+the membrane in the form of two strands. A
+4-fold repetition of the P region is believed
+to line the pore. The shaker type K1 channel,
+by contrast, has only a single copy of the six
+a helices and the P region. Four such subunits
+are assembled to form a complete channel.
+(Adapted from Catterall, 1988; Stevens, 1991.)
+(B) The membrane topology of channels
+gated by the neurotransmitters ACh, GABA
+glycine, and kainate (a class of glutamate receptor ligand). (From Kandel et al., 2000.)
+The wealth of sequence information that emerged bilayers, KcsA forms a tetramer. The 3.2 A˚ resolution
+from molecular cloning illustrated the remarkable con- crystal structure reported by Roderick MacKinnon and
+servation of channel molecules, and in turn demanded his colleagues revealed that the tetramer has two transinformation on the structure of these channels. One of membrane-spanning a helices connected by the P rethe recent successes of ion channel biology has been gion (Doyle et al., 1998) (Figures 5A and 5B).
+the first steps in the elucidation of ion channel structure. In retrospect it was remarkable how accurately this
+The first ion channel structure to be revealed was that structure had been anticipated by the earlier biophysical
+of a K studies of Hille and Armstrong. Hille and Armstrong had, 1 channel (called KcsA) from the bacterium, Streptomyces lividans. The amino acid sequence of KcsA for example, correctly predicted the selectivity filter to
+shows it to be most similar to the inward rectifier type be a narrow region near the outer face of the membrane
+of K1 channel that contributes to the regulation of the lined by polar residues. One surprise, however, is that
+resting membrane potential. The amino acid sequence the channel pore is not lined by hydrophilic amino acid
+of these channels predicts only two transmembrane do- side chains but by the carbonyl backbone of conserved
+mains connected by a P loop, in contrast to the more amino acids, containing glycine-tyrosine-glycine resifamiliar voltage-gated K1 channels, which have six dues that are characteristic of nearly all K1-selective
+transmembrane domains. When reconstituted in lipid channels. The narrow channel in the selectivity filter
+Cell/Neuron Millennial Review Supplement
+S8
+in this cavity. Four short a helices in the P loops have
+their helix dipole negative electrostatic fields focused
+on the cavity, further stabilizing the K1 ion poised at the
+selectivity filter. Finally, a long water-filled hydrophobic
+channel tunnels to the cytoplasm.
+MacKinnon’s compelling images even visualized two
+K1 ions within the selectivity filter. Thus, a total of three
+K1 ions are positioned at distinct sites within the pore,
+each separated from the other by about 8 A˚ . This view
+of a single pore capable of accommodating three K1
+ions was precisely as predicted by Hodgkin some fifty
+years earlier. MacKinnon’s structure thus provided explanations for K1 channel selectivity and conduction.
+What we lack, however, is an insight into the mechanisms of voltage-dependent gating.
+The membrane subunits of many voltage-dependent
+potassium channels associate with additional proteins
+known as the b subunits (Isom et al., 1994). One function
+of b subunits is to modify the gating of K1 channels.
+MacKinnon and his colleagues have now gone on to
+provide the structure of the b subunit of a voltage-dependent K1 channel from eukaryotic cells (Gulbis et al.,
+1999). Like the integral membrane components of the
+potassium channel, the b subunits have a 4-fold symmetrical structure. Surprisingly, each subunit appears
+similar to an oxido reductase enzyme, complete with
+a nicotinamide cofactor active site. Several structural
+features of the enzyme active site, including its location
+with respect to the 4-fold axis, implies that it may interact
+directly or indirectly with the K1 channel’s voltage sensor. Thus, the oxidative chemistry of the cell may be
+intrinsically linked to changes in membrane potential by
+the interaction of the a and b subunits of the voltagedependent K1 channels.
+The expression of ligand-gated receptors also is not
+limited to multicellular organisms. For example, it has
+become evident recently that even prokaryotes have
+functional ligand-gated glutamate receptors. Eric Gouaux and his colleagues (Chen et al., 1999) have cloned
+and expressed a glutamate-gated channel from the cyanobacterium Synechocystis PCC 6803, and in so doing
+have provided a further surprise: the receptor has a
+transmembrane structure similar to that of KcsA and
+forms a K1 selective pore. Thus, this receptor is related
+both to the inward rectifier K1 Figure 5. The Crystal Structure of a Bacterial Inward-Rectifying K channels and to eukary- 1
+Channel and a Glutamate Receptor otic glutamate receptors (Figure 5B). The extracellular
+(A1) A view of the bacterial K1 channel in cross section in the plane region bears sequence homology to the ligand-binding
+of the membrane. The four subunits are shown, with each subunit domains of glutamate receptors whereas the pore re- depicted in different color. The membrane-spanning helices are gion bears resemblance to an inverted K1 channel. This
+arranged as an inverted teepee. finding has led Gouaux and his colleagues to propose (A2) A side-view of the channel illustrating three K1 ions within the
+a prokaryotic glutamate receptor as the precursor of channel. The pore helices contribute a negative dipole that helps
+stabilize the K1 ion in the water-filled inner chamber. The two outer eukaryotic receptors. In addition, this receptor provides
+K1 ions are loosely bound to the selectivity filter formed by the P a missing link between K1 channels and glutamate reregion. (From Doyle et al., 1998.) ceptors, and indicates that both ligand- and voltage- (B) Schematic depiction of a bacterial ligand-gated glutamate recep- gated ion channels have a similar architecture, sug- tor channel with a K1 channel pore. The extracellular regions of the gesting that they both derive from a common bacterial channel show sequence similarity to the ligand-binding domains of ancestor. glutamate receptors (red in the figure here). The pore region resembles an inverted potassium channel pore (blue). (Image courtesy of
+E. Gouaux; see Chen et al., 1999.) Synaptic Receptors Coupled to G Proteins
+Produce Slow Synaptic Signals
+rapidly broadens in hourglass fashion to form a “lake” In the 1970s evidence began to emerge from Paul
+roughly halfway through the membrane, in which 60–100 Greengard and others that the neurotransmitters that
+water molecules diffuse the charges of K activate ligand-gated (ionotropic) channels to produce 
