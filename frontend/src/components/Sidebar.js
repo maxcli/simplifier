@@ -43,12 +43,11 @@ function Sidebar({
           label="Language"
           onChange={handleLanguageChange}
         >
-          <MenuItem value="formal">English</MenuItem>
-          <MenuItem value="formal">Spanish</MenuItem>
-          <MenuItem value="neutral">Chinese</MenuItem>
-          <MenuItem value="casual">Punjabi</MenuItem>
-          <MenuItem value="casual">Hindi</MenuItem>
-          <MenuItem value="casual">French</MenuItem>
+          <MenuItem value="English">English</MenuItem>
+          <MenuItem value="Spanish">Spanish</MenuItem>
+          <MenuItem value="Chinese">Chinese</MenuItem>
+          <MenuItem value="Punjabi">Punjabi</MenuItem>
+          <MenuItem value="French">French</MenuItem>
         </Select>
       </FormControl>
 
