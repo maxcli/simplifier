@@ -8,6 +8,8 @@ from pathlib import Path
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import openai
+from openai import OpenAI
+
 
 def get_settings():
     full_file_path = Path(__file__).parent.joinpath('settings.yaml')
@@ -28,9 +30,6 @@ CORS(app)
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 @app.route('/analyze_text', methods=['POST'])
 def analyze_text():
@@ -42,9 +41,9 @@ def analyze_text():
     prompt = f"""
         Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}):\n\n{sample_text}\n\nText:
     """
-    # Use OpenAI API to analyze the text
+    
     try:
-        response = client.chat.completions.create((
+        response = client.chat.completions.create(
             model="gpt-4o",  # Changed from "gpt-4o" to "gpt-4"
             messages=[
                 {"role": "user", "content": prompt}
@@ -55,10 +54,10 @@ def analyze_text():
         )
 
         # Extract the generated summary
-        summary = response.choices[0].message['content'].strip()
-        return jsonify({'summary': summary})
+        summary = response.choices[0].message.content.strip()
+        return jsonify({'text': summary})  # Changed 'summary' to 'text' to match frontend expectation
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # default http://localhost:5000
