@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import axios from "axios";
 
-function TextViewer({tone, educationLevel, expertise}) {
+function TextViewer({language, educationLevel, expertise}) {
   const [inputText, setInputText] = useState("");
   const [simplifiedText, setSimplifiedText] = useState("");
   const [summaryText, setSummaryText] = useState("");
@@ -24,7 +24,7 @@ function TextViewer({tone, educationLevel, expertise}) {
       const response = await axios.post(`http://127.0.0.1:5000/analyze_text`, {
         sample_text: inputText,
         education_level: educationLevel,
-        expertise,
+        expertise: expertise,
       });
       console.log({response});
       setSimplifiedText(response.data.text);
@@ -55,26 +55,41 @@ function TextViewer({tone, educationLevel, expertise}) {
         color="primary"
         onClick={handleAnalyze}
         disabled={loading}
+        sx={{marginBottom: 4}}
       >
         {loading ? <CircularProgress size={24} /> : "Analyze"}
       </Button>
-      {/* Summary Section */}
-      {summaryText && (
-        <Card sx={{marginBottom: 4, padding: 2, backgroundColor: "#f3f4f6"}}>
-          <CardContent>
-            <Typography variant="h5" color="primary" gutterBottom>
-              Summary
-            </Typography>
-            <Typography variant="body1">{summaryText}</Typography>
-          </CardContent>
-        </Card>
-      )}
 
-      {/* Simplified Text Section */}
-      {simplifiedText && (
-        <Box mt={4}>
-          <Typography variant="h6">Simplified Text:</Typography>
-          <Typography variant="body1">{simplifiedText}</Typography>
+      {/* Results Section */}
+      {(summaryText || simplifiedText) && (
+        <Box sx={{display: 'flex', flexDirection: 'column', gap: 4}}>
+          {/* Summary Section */}
+          {summaryText && (
+            <Card sx={{backgroundColor: "#f3f4f6"}}>
+              <CardContent>
+                <Typography variant="h5" color="primary" gutterBottom>
+                  Summary
+                </Typography>
+                {summaryText.split('\n').filter(point => point.trim() !== '' && point.trim() !== '-').map((point, index) => (
+                  <Typography key={index} variant="body1" paragraph sx={{marginBottom: 1}}>
+                    {point.trim().startsWith('-') ? point.trim() : `- ${point.trim()}`}
+                  </Typography>
+                ))}
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Simplified Text Section */}
+          {simplifiedText && (
+            <Card sx={{backgroundColor: "#f3f4f6"}}>
+              <CardContent>
+                <Typography variant="h5" color="primary" gutterBottom>
+                  Simplified Text
+                </Typography>
+                <Typography variant="body1">{simplifiedText}</Typography>
+              </CardContent>
+            </Card>
+          )}
         </Box>
       )}
     </Box>

@@ -9,9 +9,9 @@ import TextViewer from "./components/TextViewer";
 const theme = createTheme();
 
 function App() {
-  const [tone, setTone] = useState("neutral");
-  const [educationLevel, setEducationLevel] = useState("high_school");
-  const [expertise, setExpertise] = useState("intermediate");
+  const [language, setLanguage] = useState("english");
+  const [educationLevel, setEducationLevel] = useState("");
+  const [expertise, setExpertise] = useState("");
 
   return (
     <ThemeProvider theme={theme}>
@@ -21,8 +21,8 @@ function App() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={3}>
               <Sidebar
-                tone={tone}
-                setTone={setTone}
+                language={language}
+                setLanguage={setLanguage}
                 educationLevel={educationLevel}
                 setEducationLevel={setEducationLevel}
                 expertise={expertise}
@@ -31,7 +31,7 @@ function App() {
             </Grid>
             <Grid item xs={12} md={9}>
               <TextViewer
-                tone={tone}
+                language={language}
                 educationLevel={educationLevel}
                 expertise={expertise}
               />

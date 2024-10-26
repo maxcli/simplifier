@@ -9,15 +9,15 @@ import {
 } from "@mui/material";
 
 function Sidebar({
-  tone,
-  setTone,
+  language,
+  setLanguage,
   educationLevel,
   setEducationLevel,
   expertise,
   setExpertise,
 }) {
   const handleLanguageChange = (event) => {
-    setTone(event.target.value);
+    setLanguage(event.target.value);
   };
 
   const handleEducationLevelChange = (event) => {
@@ -35,11 +35,11 @@ function Sidebar({
       </Typography>
 
       <FormControl fullWidth sx={{mt: 2}}>
-        <InputLabel id="tone-select-label">Language</InputLabel>
+        <InputLabel id="language-select-label">Language</InputLabel>
         <Select
           labelId="language-select-label"
           id="language"
-          value={tone}
+          value={language}
           label="Language"
           onChange={handleLanguageChange}
         >
@@ -68,7 +68,6 @@ function Sidebar({
           <MenuItem value="high_school">High School</MenuItem>
           <MenuItem value="undergraduate">Undergraduate</MenuItem>
           <MenuItem value="graduate">Graduate</MenuItem>
-          <MenuItem value="phd">PhD</MenuItem>
         </Select>
       </FormControl>
 
