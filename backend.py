@@ -45,7 +45,7 @@ def analyze_text():
     """
 
     summary_prompt = f"""
-        Provide a 3-bullet point summary of the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+        Provide a 3-bullet point short summary of the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
         Text: {sample_text}
     """
@@ -78,44 +78,8 @@ def analyze_text():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-
-@app.route("/analyze_website", methods=['POST'])
-def analyze_website():
-    data = request.json
-    url = data.get('url', '')
     
-    try:
-        text = scrape_website(url)
-        return analyze_text(text)
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-        
-        
-    expertise = data.get('expertise', '')
-    education_level = data.get('education_level', '')
-
-    prompt = f"""
-        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level})\n\nText:{sample_text}:
-    """
-    
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",  # Changed from "gpt-4o" to "gpt-4"
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=8192,
-            n=1,
-            temperature=0.5,
-        )
-
-        # Extract the generated summary
-        summary = response.choices[0].message.content.strip()
-        return jsonify({'text': summary})  # Changed 'summary' to 'text' to match frontend expectation
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-        
-    
+   
         
 
 
