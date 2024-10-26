@@ -1,7 +1,7 @@
 // src/App.js
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {ThemeProvider, createTheme} from "@mui/material/styles";
-import { Box, Container, Grid } from "@mui/material";
+import {Box, Container, Grid} from "@mui/material";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import TextViewer from "./components/TextViewer";
@@ -9,18 +9,18 @@ import TextViewer from "./components/TextViewer";
 const theme = createTheme();
 
 function App() {
-  const [tone, setTone] = useState('neutral');
-  const [educationLevel, setEducationLevel] = useState('high_school');
-  const [expertise, setExpertise] = useState('intermediate');
+  const [tone, setTone] = useState("neutral");
+  const [educationLevel, setEducationLevel] = useState("high_school");
+  const [expertise, setExpertise] = useState("intermediate");
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{flexGrow: 1}}>
         <Header />
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{pt: 4}}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={3}>
-              <Sidebar 
+              <Sidebar
                 tone={tone}
                 setTone={setTone}
                 educationLevel={educationLevel}
@@ -30,7 +30,7 @@ function App() {
               />
             </Grid>
             <Grid item xs={12} md={9}>
-              <TextViewer 
+              <TextViewer
                 tone={tone}
                 educationLevel={educationLevel}
                 expertise={expertise}

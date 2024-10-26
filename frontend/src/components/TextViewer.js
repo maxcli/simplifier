@@ -1,23 +1,83 @@
 // src/components/TextViewer.js
-import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import React, {useState} from "react";
+import {
+  Box,
+  Button,
+  TextField,
+  Typography,
+  CircularProgress,
+  Card,
+  CardContent,
+} from "@mui/material";
+import axios from "axios";
 
-function TextViewer() {
+function TextViewer({tone, educationLevel, expertise}) {
+  const [inputText, setInputText] = useState("");
+  const [simplifiedText, setSimplifiedText] = useState("");
+  const [summaryText, setSummaryText] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleAnalyze = async () => {
+    console.log({inputText});
+    setLoading(true);
+    try {
+      const response = await axios.post(`http://127.0.0.1:5000/analyze_text`, {
+        sample_text: inputText,
+        education_level: educationLevel,
+        expertise,
+      });
+      console.log({response});
+      setSimplifiedText(response.data.text);
+      setSummaryText(response.data.summary);
+    } catch (error) {
+      console.error("Error analyzing text:", error);
+      setSimplifiedText("An error occurred while analyzing the text.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <main className="flex-grow p-4">
-      <Card className="mb-4 shadow-lg">
-        <CardContent>
-          <Typography variant="h5" component="div">
-            Document Viewer
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Upload a document to start.
-          </Typography>
-        </CardContent>
-      </Card>
-    </main>
+    <Box>
+      {/* Input Section */}
+      <TextField
+        label="Enter Text to Analyze"
+        multiline
+        rows={4}
+        fullWidth
+        variant="outlined"
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+        sx={{marginBottom: 2}}
+      />
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={handleAnalyze}
+        disabled={loading}
+      >
+        {loading ? <CircularProgress size={24} /> : "Analyze"}
+      </Button>
+      {/* Summary Section */}
+      {summaryText && (
+        <Card sx={{marginBottom: 4, padding: 2, backgroundColor: "#f3f4f6"}}>
+          <CardContent>
+            <Typography variant="h5" color="primary" gutterBottom>
+              Summary
+            </Typography>
+            <Typography variant="body1">{summaryText}</Typography>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Simplified Text Section */}
+      {simplifiedText && (
+        <Box mt={4}>
+          <Typography variant="h6">Simplified Text:</Typography>
+          <Typography variant="body1">{simplifiedText}</Typography>
+        </Box>
+      )}
+    </Box>
   );
 }
 
