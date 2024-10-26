@@ -9,7 +9,7 @@ import TextViewer from "./components/TextViewer";
 const theme = createTheme();
 
 function App() {
-  const [language, setLanguage] = useState("english");
+  const [language, setLanguage] = useState("");
   const [educationLevel, setEducationLevel] = useState("");
   const [expertise, setExpertise] = useState("");
 
