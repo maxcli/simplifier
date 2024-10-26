@@ -60,6 +60,7 @@ Before you begin, ensure you have met the following requirements:
      "url": "https://example.com/article",
      "expertise": "beginner",
      "education_level": "high school"
+     "language": "english"
    }
    ```
 
@@ -71,7 +72,7 @@ Simplifies and summarizes text from a given URL.
 
 Request body:
 - `url` (string, required): The URL to scrape and analyze
-- `language` (string, optional): The language of the text (default is "Spanish")
+- `language` (string, optional): The language of the text
 - `expertise` (string, required): User's expertise level (e.g., "beginner", "intermediate", "expert")
 - `education_level` (string, required): User's education level (e.g., "high school", "undergraduate", "graduate")
 
@@ -85,6 +86,6 @@ Simplifies and summarizes provided text.
 
 Request body:
 - `text` (string, required): The text to analyze
-- `language` (string, optional): The language of the text (default is "Spanish")
+- `language` (string, optional): The language of the text 
 - `education_level` (string, required): User's education level (e.g., "high school", "undergraduate", "graduate")
 - `expertise` (string, required): User's expertise level
