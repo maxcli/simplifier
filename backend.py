@@ -5,11 +5,9 @@
 
 import yaml
 from pathlib import Path
-
-  
-OpenAPI_KEY = "Secret"
- 
-
+from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
+import openai
 
 def get_settings():
     full_file_path = Path(__file__).parent.joinpath('settings.yaml')
@@ -18,21 +16,18 @@ def get_settings():
     return settings_data
 
 try:
-    settingsDict=get_settings()
-    OPENIDKEY_KEY=settingsDict["OpenAPI_KEY"]
-    print("open id  key" +OPENIDKEY_KEY)
-
-
+    settingsDict = get_settings()
+    OPENAI_API_KEY = settingsDict["OpenAPI_KEY"]
+    print("OpenAI API key loaded")
 except Exception as error:
-    print("An exception occurred",error)
-from flask import Flask, request, jsonify, render_template
-import openai
+    print("An exception occurred", error)
+    OPENAI_API_KEY = "your-api-key-goes-here"
 
 app = Flask(__name__)
 CORS(app)
 
 # Set up OpenAI API key
-openai.api_key = "your-api-key-goes-here"
+openai.api_key = OPENAI_API_KEY
 
 @app.route('/')
 def index():
@@ -51,7 +46,7 @@ def analyze_text():
     # Use OpenAI API to analyze the text
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o",
+            model="gpt-4",  # Changed from "gpt-4o" to "gpt-4"
             messages=[
                 {"role": "user", "content": prompt}
             ],
@@ -65,3 +60,6 @@ def analyze_text():
         return jsonify({'summary': summary})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
