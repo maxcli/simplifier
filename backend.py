@@ -53,7 +53,7 @@ def analyze_text():
     try:
         # First API call for rewritten text
         rewrite_response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[{"role": "user", "content": rewrite_prompt}],
             max_tokens=8192,
             n=1,
@@ -63,7 +63,7 @@ def analyze_text():
 
         # Second API call for bullet point summary
         summary_response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[{"role": "user", "content": summary_prompt}],
             max_tokens=8192,
             n=1,
