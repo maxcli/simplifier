@@ -1,7 +1,7 @@
 #!/usr/bin/python3 
 #shebang . interpreter directive
 
-#pip install pyyaml
+#pip install pyyaml arize-phoenix-otel openinference-instrumentation-openai openai
 
 import yaml
 from pathlib import Path
@@ -11,7 +11,13 @@ import openai
 from openai import OpenAI
 import requests
 from bs4 import BeautifulSoup
+import os
 
+# Arize Phoenix setup
+from phoenix.otel import register
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
+from openinference.instrumentation.openai import OpenAIInstrumentor
 
 def get_settings():
     full_file_path = Path(__file__).parent.joinpath('settings.yaml')
@@ -22,13 +28,38 @@ def get_settings():
 try:
     settingsDict = get_settings()
     OPENAI_API_KEY = settingsDict["OpenAPI_KEY"]
-    print("OpenAI API key loaded")
+    PHOENIX_API_KEY = settingsDict["PHOENIX_CLIENT_HEADERS"].split("=")[1]
+    PHOENIX_ENDPOINT = settingsDict["PHOENIX_COLLECTOR_ENDPOINT"]
+    
+    print("OpenAI API key and Phoenix settings loaded")
+    
+    # Set environment variables
+    os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+    os.environ['PHOENIX_CLIENT_HEADERS'] = f"api_key={PHOENIX_API_KEY}"
+    
 except Exception as error:
     print("An exception occurred", error)
     OPENAI_API_KEY = "your-api-key-goes-here"
+    PHOENIX_API_KEY = "your-phoenix-api-key-goes-here"
+    PHOENIX_ENDPOINT = "https://app.phoenix.arize.com"
+
+# Register the application with cloud Phoenix instance
+tracer_provider = register(
+    project_name="simplifier",
+    endpoint=f"{PHOENIX_ENDPOINT}/v1/traces",
+)
+
+# Initialize the OpenAIInstrumentor
+OpenAIInstrumentor().instrument(tracer_provider=tracer_provider)
 
 app = Flask(__name__)
 CORS(app)
+
+# Instrument Flask
+FlaskInstrumentor().instrument_app(app)
+
+# Instrument requests library
+RequestsInstrumentor().instrument()
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 

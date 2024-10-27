@@ -20,7 +20,7 @@ Simplifier is a web application that simplifies domain-specific text based on an
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.7 or higher
+- Python 3.11 or higher
 - pip (Python package manager)
 - Node.js and npm (for React frontend)
 - An OpenAI API key
