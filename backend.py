@@ -70,7 +70,7 @@ def analyze_text():
     sample_text = data.get('sample_text', '')
     expertise = data.get('expertise', '')
     education_level = data.get('education_level', '')
-    language = data.get('language', 'Spanish')
+    language = data.get('language', 'English')
 
     # Debug print to ensure language is being received correctly
     print("Language:", language)  # This will display in your terminal/console
@@ -152,6 +152,7 @@ def analyze_url():
     url = data.get('url', '')
     expertise = data.get('expertise', '')
     education_level = data.get('education_level', '')
+    language = data.get('language', 'English') 
 
     extracted_text = scrape_website(url)
     
@@ -160,13 +161,13 @@ def analyze_url():
         return jsonify({'error': 'Failed to extract text from the provided URL'}), 400
 
     rewrite_prompt = f"""
-        Rewrite the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+        Rewrite the following text in {language}, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
         Text: {truncated_text}
     """
 
     summary_prompt = f"""
-        Provide a 3-bullet point summary of the key points from the following text, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
+        Provide a 3-bullet point summary of the key points from the following text in {language}, adjusting the complexity and terminology based on the user's expertise ({expertise}) and education level ({education_level}).
 
         Text: {truncated_text}
     """
